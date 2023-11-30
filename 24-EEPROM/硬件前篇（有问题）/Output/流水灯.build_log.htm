@@ -1,0 +1,51 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.14.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 8613015757858, 1, LIC=CZLZX-HNWIQ-HLRCL-06U8X-AQN6S-V00Y3
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Standard  Version: 5.14.0.0
+Toolchain Path:  F:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.14.0.0
+Dialog DLL:      DCM.DLL V1.13.1.0
+Target DLL:      CMSIS_AGDI.dll V1.21.0.0
+Dialog DLL:      TCM.DLL V1.14.4.0
+ 
+<h2>Project:</h2>
+E:\keil-project\硬件I2C\前篇\Project\RVMDK（uv5）\BH-F103.uvprojx
+Project File Date:  06/14/2023
+
+<h2>Output:</h2>
+Build target 'Led'
+compiling main.c...
+..\..\User\main.c(36): warning:  #223-D: function "I2C_EE_Init" declared implicitly
+    I2C_EE_Init();
+..\..\User\main.c(39): warning:  #223-D: function "I2C_EE_ByteWrite" declared implicitly
+        I2C_EE_ByteWrite(0x55, 11);
+..\..\User\main.c(41): warning:  #223-D: function "EEPROM_WaitForWriteEnd" declared implicitly
+        EEPROM_WaitForWriteEnd();
+..\..\User\main.c(44): warning:  #223-D: function "I2C_EE_SeqRead" declared implicitly
+        I2C_EE_SeqRead(readData,11,1);
+..\..\User\main.c: 4 warnings, 0 errors
+linking...
+Program Size: Code=6344 RO-data=336 RW-data=48 ZI-data=1040  
+FromELF: creating hex file...
+"..\..\Output\流水灯.axf" - 0 Error(s), 4 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  E:\keil-project\硬件I2C\前篇\Project\RVMDK（uv5）\RTE
+  F:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0
+
+<h2>Collection of Component Files used:</h2>
+</pre>
+</body>
+</html>
