@@ -1,0 +1,47 @@
+{
+    "configurations": [
+        {
+            "name": "stm32",
+            "includePath": [
+                // 自己根据情况添加头文件路径
+                "${workspaceFolder}/Libraries/CMSIS",
+                "${workspaceFolder}/User",
+                "${workspaceFolder}/Libraries/FWlib/inc",
+                "${workspaceFolder}/User/led",
+                "${workspaceFolder}/User/USART",
+                "${workspaceFolder}/User/font",
+                "${workspaceFolder}/User/lcd",
+                "${workspaceFolder}/User/Key",
+                "${workspaceFolder}/User/rtc",
+                "${workspaceFolder}/User/flash"
+                 
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "__CC_ARM",
+                "STM32F10X_HD", 
+                "USE_STDPERIPH_DRIVER"
+            ],
+            "browse": {
+                "path": [
+                    // 这里的跟前面“includePath”保持一致即可
+                    "${workspaceFolder}/Libraries/CMSIS",
+                    "${workspaceFolder}/User",
+                    "${workspaceFolder}/Libraries/FWlib/inc",
+                    "${workspaceFolder}/User/led",
+                    "${workspaceFolder}/User/USART",
+                    "${workspaceFolder}/User/font",
+                    "${workspaceFolder}/User/lcd",
+                    "${workspaceFolder}/User/Key",
+                    "${workspaceFolder}/User/rtc",
+                    "${workspaceFolder}/User/flash"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            },
+            "intelliSenseMode": "gcc-x86"
+        }
+    ],
+    "version": 4
+}
